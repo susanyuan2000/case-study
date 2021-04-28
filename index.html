@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WPC</title>
+     <link rel="stylesheet" href="style.css" />
+ </head>
+
+<body>
+    <h4>Rongzhen Yuan</h4>
+   <h6>Graphic Designer, Daughter, Dog Lover, Parsons Student</h6>
+    <hr>
+    <h1>WAGWAN</h1>
+    <h5>Explore and Build Connection with New Artits in WAGWAN </h5>
+ 
+   <div class="container">
+		<div class="card-list" id="card-list">
+			<div class="card">
+				<div class="face face1">
+					<div class="content">
+						<img src="https://i.pinimg.com/564x/4a/92/a3/4a92a369fd106114a9f1eeae712c5693.jpg">
+						<h3>Design</h3>
+					</div>
+				</div>
+				<div class="face face2">
+					<div class="content">
+						<p>My inspiration came from namecard because the airtable I am working with is personal imformations of artists. So I think it would 
+							be fun to make the website like namecards. So users can get to know artist from WAGWAN better.</p>
+						   
+					</div>
+				</div>
+			</div>
+
+
+			<div class="card">
+				<div class="face face1">
+					<div class="content">
+						<img src="https://files.slack.com/files-pri/T01GEBJQNES-F020DSHPJLC/wechatimg1470.jpeg">
+						<h3>Process</h3>
+					</div>
+				</div>
+				<div class="face face2">
+					<div class="content">
+						<p>I learned alot during the process. It was great to work with airtable. Every effective tool. 
+						</p>
+						
+					</div>
+				</div>
+			</div>
+
+
+			<div class="card">
+				<div class="face face1">
+					<div class="content">
+						<img src="https://files.slack.com/files-pri/T01GEBJQNES-F0204KE1USH/wechatimg1469.jpeg">
+						<h3>Launch</h3>
+					</div>
+				</div>
+				<div class="face face2">
+					<div class="content">
+						<p>I am glad how the final result turned out. Users can choose what kind of artists they wanna explore. </p>
+							<a href="https://susanyuan2000.github.io/project3/" target="_blank">check it out</a>
+					</div>
+				</div>
+			</div>
+		</div>
+   </div>
+   <script type="text/javascript">
+		handelResize();
+		window.onresize = function () {
+			handelResize();
+        }	
+		function handelResize(){
+			let pageWidth= document.documentElement.clientWidth;// 	
+			document.getElementById("card-list").style.justifyContent="space-between";
+			if(pageWidth<=700){
+				document.getElementById("card-list").style.width=400+"px";
+				document.getElementById("card-list").style.justifyContent="center";
+			}
+				
+			else if(pageWidth<=1000)
+				document.getElementById("card-list").style.width=700+"px";
+			else
+				document.getElementById("card-list").style.width=1000+"px";
+		}
+	</script>
+</body>
+
+</html>
